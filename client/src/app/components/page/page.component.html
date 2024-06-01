@@ -1,0 +1,44 @@
+<app-navbar (navBarEvent)="handleNavbarEvent($event)"></app-navbar>
+    <section class="title">
+        <section class="title-container">
+            <h1>מומיו</h1>
+            <h3>הדם של ההרים</h3>
+            <button class="contact" id="buyButton" (click)="handleNavbarEvent($event)">צור קשר</button>
+        </section>
+    </section>
+    <div class="second-container">
+        <section class="top">
+            <h1>סובלים מחולשת לב או קרעי דם</h1>
+            <h2>תכירו את מומיו</h2>
+        </section>
+        <section class="bottom">
+            <img src="../../../assets/static-info/images/מומיו 2.jpg">
+            <div>
+                <p>מונע קרעי דם בעורקים</p>
+                <p>מפחית את החולשות והאוטמים בלב</p>
+                <p>יכול למנוע אירועים כמו שבץ של עורקים</p>
+            </div>
+        </section>
+        <hr />
+        <div class="productDisplayer-container" id="buy_product">
+            <section class="productDisplayer">
+                <div #mumCap class="product-container">
+                    <h2>קפסולות מומיו</h2>
+                    <img src="../../../assets/static-info/images/Example.jpg" alt="mumio">
+                </div>
+                <div #shilaCap class="product-container">
+                    <h2>קפסולות שילאג'ט</h2>
+                    <img src="../../../assets/static-info/images/Example.jpg" alt="cap shi">
+                </div>
+                
+                <div #shilaJel class="product-container">
+                    <h2>ממרח שילאג'ט</h2>
+                    <img src="../../../assets/static-info/images/Example.jpg" alt="tip shi">
+                </div>
+            </section>  
+        </div>
+        <hr />
+        <h4 class="tag">להרחבת הידע</h4>
+    </div>
+    <app-product-detail id="product"></app-product-detail>
+    <app-contact id="contact"></app-contact>

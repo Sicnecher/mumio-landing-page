@@ -1,0 +1,7 @@
+<div class="image-container">
+    <ng-container *ngFor="let imageUrl of images; let i = index">
+      <img [src]="imageUrl" [class.active]="i === currentImageIndex" [class.next]="i === getNextImageIndex()">
+    </ng-container>
+  </div>
+  <button (click)="transitionToNextImage()">Next Image</button>
+  

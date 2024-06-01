@@ -1,0 +1,8 @@
+<div>
+    <h1>כיצד תרצה לקבל את המוצר?</h1>
+    <form>
+        <input type="check" name="choice" [(ngModel)]="choice" (input)="setButton()" placeholder="קפסולות">
+        <input type="check" name="choice" [(ngModel)]="choice" (input)="setButton()" placeholder="טיפות">
+    </form>
+    <button [disabled]="enable" (click)="sendRequest()">שלח</button>
+</div>

@@ -1,0 +1,70 @@
+h3{
+
+}
+
+li{
+
+}
+
+p{
+
+}
+
+@media screen and (max-width: 700px){
+    h3{
+        font-size: 15px;
+    }
+    li{
+
+    }
+    p{
+
+    }
+}
+
+p{
+    color:aliceblue;
+    font-size: 10px
+}
+
+.inner-container div:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+li{
+    color:aliceblue;
+}
+h1{
+    color:aliceblue;
+}
+h2{
+    color:aliceblue;
+}
+h3{
+    color:aliceblue;
+}
+h4{
+    color:aliceblue;
+}
+
+section{
+    display:flex;
+    text-align: right;
+}
+
+img{
+    width: 20vw;
+    height: 30vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 7.5vh;
+}

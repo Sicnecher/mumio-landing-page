@@ -1,0 +1,61 @@
+h3{
+
+}
+
+li{
+
+}
+
+p{
+
+}
+
+@media screen and (max-width: 700px){
+    h3{
+        font-size: 15px;
+    }
+    li{
+
+    }
+    p{
+
+    }
+}
+
+p{
+    color:aliceblue;
+    font-size: 10px
+}
+
+.inner-container div:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+li{
+    color:aliceblue;
+}
+h1{
+    color:aliceblue;
+}
+h2{
+    color:aliceblue;
+}
+h3{
+    color:aliceblue;
+}
+h4{
+    color:aliceblue;
+}
+div{
+    text-align: right;
+}
+
+iframe{
+    width: 60vw;
+    height: 40vw;
+}
+
+.video-container{
+    display: flex;
+    text-align: center;
+}

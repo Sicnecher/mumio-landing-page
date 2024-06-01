@@ -1,0 +1,50 @@
+.inner-container{
+    display: flex;
+    justify-content: space-between;
+}
+.inner-container div{
+    text-align: center;
+}
+hr{
+    color:white
+}
+
+svg{
+    color: aliceblue;
+    width:35px;
+    height: 35px;
+}
+
+p{
+    color:aliceblue;
+    font-size: 10px
+}
+
+.inner-container div:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+li{
+    color:aliceblue;
+}
+h1{
+    color:aliceblue;
+}
+h2{
+    color:aliceblue;
+}
+h3{
+    color:aliceblue;
+}
+h4{
+    color:aliceblue;
+}
+
+@media screen and (max-width: 400px){
+    .inner-container{
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+    }
+}

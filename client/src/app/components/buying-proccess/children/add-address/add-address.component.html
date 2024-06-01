@@ -1,0 +1,18 @@
+<div class="container">
+        <h2>מלאו פרטים</h2>
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+                <input type="text" ngModel name="name" required #name="ngModel" placeholder="*שם מלא">
+                <div *ngIf="name.invalid && (name.dirty || name.touched)">
+                    <div class="error" *ngIf="name.errors && name.errors['required']">.נא למלא שם</div>
+                </div>
+                <input type="text" ngModel name="city" required #city="ngModel" placeholder="עיר*">
+                <div *ngIf="city.invalid && (city.dirty || city.touched)">
+                    <div class="error" *ngIf="city.errors && city.errors['required']">.נא למלא שם</div></div>
+                <input type="text" ngModel name="street" required #street="ngModel" placeholder="*רחוב">
+                <div *ngIf="street.invalid && (street.dirty || street.touched)">
+                    <div class="error" *ngIf="street.errors && street.errors['required']">נא למלא רחוב</div>
+                </div>
+                <input type="text" ngModel name="apartment" required placeholder="דירה">
+                <input type="text" ngModel name="postal-code" required placeholder="מיקוד">
+        </form>
+</div>

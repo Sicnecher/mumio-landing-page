@@ -1,0 +1,50 @@
+<div>
+    <h1>שלום {{address.name}}</h1>
+    <h1>האם פרטי ההזמנה נכונים?</h1>
+    <div>
+        <h2>פרטי מומיו</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>סוג</th>
+                    <th>כמות</th>
+                    <th>מחיר</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr *ngFor="let price of productData.type; let i = index">
+                        @if(i == 0){
+                            <td>קפסולות</td>
+                            <td>{{ price }}</td>
+                            <td>49.99$</td>
+                        }@else if(i == 1){
+                            <td>טיפות</td>
+                            <td>{{ price }}</td>
+                            <td>49.99$</td>
+                    }
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>פרטי כתובת</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>עיר</th>
+                    <th>כתובת</th>
+                    <th>דירה</th>
+                    <th>מיקוד</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{address.city}}</td>
+                    <td>{{address.street}}</td>
+                    <td>{{address.apartment}}</td>
+                    <td>{{address.postal_code}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
